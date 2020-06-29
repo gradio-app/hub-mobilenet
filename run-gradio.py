@@ -18,5 +18,5 @@ gr.Interface(
     label,
     capture_session=True,
     title="MobileNet Image Classifier",
-    description="A state-of-the-art machine learning model that classifies images into one of 1,000 categories. These categories include a variety of animals, plants, and everyday objects. Also includes a saliency map to show the visual attention of the model."
+    description="A state-of-the-art machine learning model that classifies images into one of 1,000 categories. These categories include a variety of animals, plants, and everyday objects."
 ).launch();
