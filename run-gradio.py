@@ -9,7 +9,6 @@ def classify_image(inp):
     prediction = mobile_net.predict(inp).flatten()
     return {idx_to_labels[i].split(',')[0]: float(prediction[i]) for i in range(1000)}
 
-
 imagein = gr.inputs.Image(shape=(224, 224, 3))
 label = gr.outputs.Label(num_top_classes=3)
 
