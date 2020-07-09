@@ -6,6 +6,7 @@ mobile_net = tf.keras.applications.MobileNetV2()
 
 def classify_image(inp):
     inp = inp.reshape((1, 224, 224, 3))
+    inp = tf.keras.applications.mobilenet.preprocess_input(inp)
     prediction = mobile_net.predict(inp).flatten()
     return {idx_to_labels[i].split(',')[0]: float(prediction[i]) for i in range(1000)}
 
