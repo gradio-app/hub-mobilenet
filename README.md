@@ -1,1 +1,3 @@
 # mobilenet-example
+
+![](thumbnail.jpg)
