@@ -19,6 +19,6 @@ gr.Interface(
     label,
     capture_session=True,
     thumbnail="https://github.com/gradio-app/mobilenet-example/blob/master/thumbnail.jpg?raw=true",
-    title="MobileNet Image Classifier"
+    title="MobileNet Image Classifier",
     description="A state-of-the-art machine learning model that classifies images into one of 1,000 categories. These categories include a variety of animals, plants, and everyday objects."
 ).launch();
